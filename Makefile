@@ -12,7 +12,7 @@ javascript:
 	(cd javascript && (xdg-open App.html || open App.html || start App.html))
 
 python:
-	(cd python && python App.py)
+	(cd python && python App.py && rm -rf __pycache__)
 
 scala:
 	(cd scala && scalac *.scala && scala App && rm *.class)
